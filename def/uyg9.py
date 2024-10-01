@@ -1,0 +1,18 @@
+# Sahnede rastgele çokgenler oluşturan programı yazalım.
+
+import turtle
+import random
+
+tos=turtle.Turtle()
+
+def cokgen(kenar,buyuk):
+    for i in range(kenar):
+        tos.fd(buyuk)
+        aci=360/kenar
+        tos.right(aci)
+
+for i in range(100):
+    tos.speed(10)
+    kenar=random.randrange(1,10)
+    buyuk=random.randrange(10,80)
+    cokgen(kenar,buyuk)
